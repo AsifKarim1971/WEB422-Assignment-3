@@ -8,7 +8,7 @@ export default function Listing() {
   const router = useRouter();
   const { id } = router.query;
   const { data, error, isLoading } = useSWR(
-    https://web-422-assignment-lovat.vercel.app/api/listings/${id}`
+    `https://web-422-assignment-lovat.vercel.app/api/listings/${id}`
   );
 
   if (isLoading) return null;
